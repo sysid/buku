@@ -1263,7 +1263,7 @@ def test_load_chrome_database(chrome_db, add_pt):
     # compatibility
     json_file = chrome_db[0]
     res_yaml_file = chrome_db[1] if add_pt else chrome_db[2]
-    dump_data = False  # NOTE: change this value to dump data
+    dump_data = True  # NOTE: change this value to dump data
     if not dump_data:
         with open(res_yaml_file, "r", encoding="utf8", errors="surrogateescape") as f:
             try:
